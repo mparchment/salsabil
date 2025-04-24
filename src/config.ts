@@ -17,4 +17,4 @@ export const MENUS = [
   }
 ];
 
-// export const FOOTER_CONTENT = "";
+export const FOOTER_CONTENT = "";
