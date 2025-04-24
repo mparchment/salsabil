@@ -10,6 +10,10 @@ export default defineConfig({
   site: "https://new-ui.com/templates/journal",
   trailingSlash: "never",
 
+  experimental: {
+    session: true,
+  },
+
   prefetch: {
     prefetchAll: true,
     defaultStrategy: "viewport",
