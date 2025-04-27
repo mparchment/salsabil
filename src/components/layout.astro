@@ -156,13 +156,13 @@ const { title, description } = Astro.props;
     :root {
         --accent: var(--support-error);
         --sans-serif-regular: "sansRegular", var(--geometric-humanist);
-        --serif-title: var(--old-style);
-        --serif-title-italic: var(--old-style);
-        --serif-copy: var(--old-style);
-        --serif-sc: var(--old-style);
-        --serif-copy-italic: var(--old-style);
+        --serif-title: "12regular", var(--old-style);
+        --serif-title-italic: "12italic", var(--old-style);
+        --serif-copy: "08regular", var(--old-style);
+        --serif-sc: "SC08regular", var(--old-style);
+        --serif-copy-italic: "08italic", var(--old-style);
         --serif-breakout: "sansRegular", var(--geometric-humanist);
-        --serif-small: var(--old-style);
+        --serif-small: "12aiisc", var(--old-style);
         --mono: "monoRegular", var(--monospace-code);
     }
 
@@ -175,9 +175,8 @@ const { title, description } = Astro.props;
         margin: 0;
         padding: 0;
         font-family: var(--serif-copy);
-        font-variant-ligatures: common-ligatures discretionary-ligatures
-            historical-ligatures;
-        font-feature-settings: "liga", "dlig", "hlig";
+        font-variant-ligatures: common-ligatures discretionary-ligatures;
+        font-feature-settings: "liga", "dlig";
         font-size: 1.125rem;
         line-height: 1.75rem;
         color: var(--text-primary);
